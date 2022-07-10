@@ -23,4 +23,9 @@ public class FizzBuzzTest {
     void replace3withFizz() {
         assertThat(fizzBuzz.getNumbers(1, 3).get(2)).isEqualTo("Fizz");
     }
+
+    @Test
+    void replace5withBuzz() {
+        assertThat(fizzBuzz.getNumbers(1, 5).get(4)).isEqualTo("Buzz");
+    }
 }
