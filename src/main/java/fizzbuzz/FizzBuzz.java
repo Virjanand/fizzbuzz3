@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class FizzBuzz {
-    public List<String> getNumbers(int i) {
-        return IntStream.rangeClosed(1, 100).mapToObj(Integer::toString).collect(Collectors.toList());
+    public List<String> getNumbers(int from, int until) {
+        return IntStream.rangeClosed(from, until).mapToObj(Integer::toString).collect(Collectors.toList());
     }
 }

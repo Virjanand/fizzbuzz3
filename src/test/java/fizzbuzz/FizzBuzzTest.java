@@ -9,6 +9,6 @@ public class FizzBuzzTest {
     @Test
     void get100Numbers() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        assertThat(fizzBuzz.getNumbers(100)).hasSize(100);
+        assertThat(fizzBuzz.getNumbers(1, 100)).hasSize(100);
     }
 }
